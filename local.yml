@@ -3,10 +3,10 @@
   become: true
 
   pre-tasks:
-  - name: update repositories
-    apt:
-      update_cache: true
-    changed_when: False
+    - name: update repositories
+      apt:
+        update_cache: true
+      changed_when: False
 
   tasks:
-  - include: tasks/packages.yml
+    - include: tasks/packages.yml

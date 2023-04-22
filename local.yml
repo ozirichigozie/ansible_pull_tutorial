@@ -11,4 +11,6 @@
   tasks:
     - name: include tasks at tasks folder
       include_tasks:
-        file: tasks/packages.yml
+        - tasks/users.yml
+        - tasks/cron.yml
+        - tasks/packages.yml
